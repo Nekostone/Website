@@ -1,0 +1,63 @@
+.body {
+    background-color: blue;
+}
+
+.jumbo-top {
+    background-size: cover;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+}
+
+.jumbo-top h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.content-center {
+    margin: auto;
+}
+
+.content-left {
+    max-width: 50%;
+    margin-left: 5%;
+}
+
+.content-left h2, p {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.content-right {
+    max-width: 50%;
+    margin-right: 5%;
+}
+
+.content-right h2, p {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.jumbo-gray{
+    height: 60vh;
+    margin: auto;
+    background-color: ghostwhite;
+    display: flex;
+}
+
+.jumbo-other{
+    height: 60vh;
+    margin: auto;
+    display: flex;
+}
+
+.jumbo-team {
+    height: 80vh;
+    margin: auto;
+    display: flex;
+}
+
+.jumbotron h2, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
