@@ -1,13 +1,12 @@
 import React from "react"
-import XavierMeow from "../images/team_members/Xavier.jpg"
-import TeeMengMeow from "../images/team_members/TM.jpg"
-import YiChengMeow from "../images/team_members/yc.jpg"
-import TeckMeow from "../images/team_members/Teck.jpg"
-import KayJinMeow from "../images/team_members/KJ.jpg"
+import { Col, Container, Figure, Jumbotron, Row } from "react-bootstrap"
 import JundeMeow from "../images/team_members/JD.jpg"
+import KayJinMeow from "../images/team_members/KJ.jpg"
 import SiewWenMeow from "../images/team_members/sw.png"
-
-import { Jumbotron, Container, Col, Row, Figure } from "react-bootstrap"
+import TeckMeow from "../images/team_members/Teck.jpg"
+import TeeMengMeow from "../images/team_members/TM.jpg"
+import XavierMeow from "../images/team_members/Xavier.jpg"
+import YiChengMeow from "../images/team_members/yc.jpg"
 
 const JumboTeam = () => {
   const MakeFace = (imgsrc, name) => {
