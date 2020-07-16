@@ -1,35 +1,27 @@
+import "bootstrap/dist/css/bootstrap.min.css"
 import React from "react"
-import { Link } from "gatsby"
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/app.css'
-
 import Header from "../components/header"
-import JumboOne from "../components/jumbo-one"
-import JumboTwo from "../components/jumbo-two"
-import JumboThree from "../components/jumbo-three"
-import JumboFour from "../components/jumbo-four"
-import JumboFive from "../components/jumbo-five"
-import JumboTeam from "../components/jumbo-team"
-
-import { 
-  Jumbotron, 
-  Button 
-} from "react-bootstrap"
 import JumboBottom from "../components/jumbo-bottom"
+import JumboFive from "../components/jumbo-five"
+import JumboFour from "../components/jumbo-four"
+import JumboOne from "../components/jumbo-one"
+import JumboTeam from "../components/jumbo-team"
+import JumboThree from "../components/jumbo-three"
+import JumboTwo from "../components/jumbo-two"
+import "../styles/app.css"
 
 const IndexPage = () => {
   return (
     <>
-    <Header />
-    <JumboOne />
-    <JumboTwo />
-    <JumboThree />
-    <JumboFour />
-    <JumboFive />
-    <JumboTeam />
-    <JumboBottom/>
-  </>
+      <Header />
+      <JumboOne />
+      <JumboTwo />
+      <JumboThree />
+      <JumboFour />
+      <JumboFive />
+      <JumboTeam />
+      <JumboBottom />
+    </>
   )
 }
 

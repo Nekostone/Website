@@ -1,19 +1,26 @@
 import React from "react"
-
-import { Jumbotron, Container } from "react-bootstrap"
-
+import { Col, Container, Image, Jumbotron, Row } from "react-bootstrap"
+import noCameraPhoto from "../images/no_camera.png"
 
 const JumboTwo = () => {
-    return(
-        <Jumbotron fluid className="jumbo-gray">
-            <Container className="content-left">
-                <h2>Non invasive monitoring</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </p>
-            </Container>
-        </Jumbotron>
-    )
+  return (
+    <Jumbotron className="jumbo-gray content-center">
+      <Container>
+        <Row>
+          <Col xs={12} md={6} className="content-center">
+            <h2>Non invasive monitoring</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </Col>
+          <Col xs={12} md={6} className="text-center">
+            <Image src={noCameraPhoto} className="jumbo-img" />
+          </Col>
+        </Row>
+      </Container>
+    </Jumbotron>
+  )
 }
 
 export default JumboTwo
