@@ -1,0 +1,25 @@
+.in_livingroom {
+  background-color: aqua;
+  width: 140px;
+  height: 240px;
+  margin-top: 200px;
+  margin-left: 170px;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.in_bedroom {
+  background-color: aqua;
+  width: 110px;
+  height: 190px;
+  margin-top: 250px;
+  margin-left: 300px;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.floorplan {
+  width: 425px;
+  height: 437px;
+  background-image: url("../images/floorplan_greyed.png");
+}
