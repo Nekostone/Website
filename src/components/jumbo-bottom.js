@@ -9,8 +9,12 @@ const JumboBottom = () => {
         <p> Subscribe to our telegram bot or contact us</p>
       </Container>
       <Container className="content-left">
-        <Button variant="dark" size="lg">
-          Learn More
+        <Button
+          variant="dark"
+          size="lg"
+          onClick={() => window.open("https://t.me/Catstonebot", "_blank")}
+        >
+          CatstoneBot
         </Button>
         <Button variant="outline-dark" size="lg">
           Contact us

@@ -4,7 +4,7 @@ import setupPhoto from "../images/easy_set_up.png"
 
 const JumboThree = () => {
   return (
-    <Jumbotron className="jumbo-gray content-center">
+    <Jumbotron className="content-center">
       <Container>
         <Row>
           <Col xs={12} md={6} className="text-center content-center">
