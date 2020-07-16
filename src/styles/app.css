@@ -1,81 +1,92 @@
 .jumbo-top {
-    background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(211,211,211,0.6) 0%,rgba(211,211,211,0.7) 100%),url("../images/nice_scenery.jpg");
-    height: 80vh;
-    margin: auto;
-    display: flex;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(211, 211, 211, 0.6) 0%,
+      rgba(211, 211, 211, 0.7) 100%
+    ),
+    url("../images/nice_scenery.jpg");
+  height: 80vh;
+  margin: auto;
+  display: flex;
 }
 
 .jumbo-top h1 {
-    text-align: center;
-    font-size: 4em;
+  text-align: center;
+  font-size: 4em;
+}
+
+.jumbo-img {
+  max-width: 50%;
 }
 
 .content-center {
-    margin: auto;
+  margin: auto;
 }
 
 .content-left {
-    max-width: 50%;
-    margin-left: 5%;
+  max-width: 50%;
+  margin-left: 5%;
 }
 
-.content-left h2, p {
-    text-align: center;
-    padding-top: 5%;
+.content-left h2,
+p {
+  text-align: center;
+  padding-top: 5%;
 }
 
 .content-right {
-    max-width: 50%;
-    margin-right: 5%;
+  max-width: 50%;
+  margin-right: 5%;
 }
 
-.content-right h2, p {
-    text-align: center;
-    padding-top: 5%;
+.content-right h2,
+p {
+  text-align: center;
+  padding-top: 5%;
 }
 
-.jumbo-gray{
-    height: 60vh;
-    margin: auto;
-    background-color: ghostwhite;
-    display: flex;
+.jumbo-gray {
+  margin: auto;
+  background-color: ghostwhite;
+  display: flex;
 }
 
-.jumbo-other{
-    height: 60vh;
-    margin: auto;
-    display: flex;
+.jumbo-other {
+  height: 60vh;
+  margin: auto;
+  display: flex;
 }
 
 .jumbo-team {
-    margin: auto;
-    display: flex;
-    background-color:ghostwhite;
+  margin: auto;
+  display: flex;
+  background-color: ghostwhite;
 }
 
-.jumbotron h2, p {
-    text-align: center;
-    margin-bottom: 20px;
+.jumbotron h2,
+p {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .jumbo-team h3 {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .jumbo-bot {
-    height: 40vh;
-    margin: auto;
-    display: flex;
+  height: 40vh;
+  margin: auto;
+  display: flex;
 }
 
 .jumbo-bot button {
-    margin-left: 30px;
-    margin-top: 40px;
+  margin-left: 30px;
+  margin-top: 40px;
 }
 
-.jumbo-overview{
-    margin: auto;
-    display: flex;
+.jumbo-overview {
+  margin: auto;
+  display: flex;
 }
