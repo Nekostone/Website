@@ -10,7 +10,7 @@ import {
 
 const JumboFive = () => {
     return (
-        <Jumbotron fluid className="jumbo-other">
+        <Jumbotron fluid className="jumbo-overview">
             <Container className="content-center">
                 <h2>System Overview</h2>
                 <Row>
