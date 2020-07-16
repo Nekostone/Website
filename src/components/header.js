@@ -25,7 +25,7 @@ const Header = (props) => {
           <Nav.Link href="#team">The Team</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <Button variant="dark">Live Demo</Button>
+      <Button variant="dark" href="/demo">Live Demo</Button>
     </Navbar> 
   );
 }

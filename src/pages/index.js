@@ -16,6 +16,7 @@ import {
   Jumbotron, 
   Button 
 } from "react-bootstrap"
+import JumboBottom from "../components/jumbo-bottom"
 
 const IndexPage = () => {
   return (
@@ -27,6 +28,7 @@ const IndexPage = () => {
     <JumboFour />
     <JumboFive />
     <JumboTeam />
+    <JumboBottom/>
   </>
   )
 }
