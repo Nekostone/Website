@@ -1,9 +1,12 @@
 import React from "react"
 import { Col, Container, Image, Jumbotron, Row } from "react-bootstrap"
+import ScrollableAnchor from "react-scrollable-anchor"
+
 import noCameraPhoto from "../images/no_camera.png"
 
 const JumboTwo = () => {
   return (
+    <ScrollableAnchor id={"about"}>
     <Jumbotron className="jumbo-gray content-center">
       <Container>
         <Row>
@@ -20,6 +23,7 @@ const JumboTwo = () => {
         </Row>
       </Container>
     </Jumbotron>
+    </ScrollableAnchor>
   )
 }
 
