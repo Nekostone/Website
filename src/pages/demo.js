@@ -7,31 +7,44 @@ import "../styles/app.css"
 import Header from "../components/header"
 import { Col, Container, Row } from "react-bootstrap"
 
-var inLivingroom = false
-var inBedroom = true
+var inLivingroom = true
+var inBedroom = false
 
 var mqtt = require("mqtt")
 var client = mqtt.connect("ws://broker.mqttdashboard.com:1883") //TODO: having trouble with this connection
-
+// var client = mqtt.connect("mqtt://localhost:9001",{clientId:"mqttjs01"})
 var topic = "bps/kjhaus/livingroom"
+var topic2 = "bps/kjhaus/bedroom"
 
 client.on("connect", function () {
-  client.subscribe(topic, function (err) {
+  client.subscribe(topic, {qos:1}, function (err) {
     if (!err) {
-      console.log("Connected to client!")
+      console.log("Connected to client on topic!")
     }
   })
+  client.subscribe(topic2, {qos:1}, function (err) {
+    if (!err) {
+      console.log("Connected to client on topic2!")
+    }
+  } )
 })
 
 client.on("message", function (topic, message) {
   if (topic == "fall") {
     // TODO: add a text to show on screen that a fall is detected at specific timing
-  } else if (topic.split("/")[-1] == "livingroom") {
-    inBedroom = false
-    inLivingroom = true
-  } else if (topic.split("/")[-1] == "bedroom") {
-    inBedroom = true
-    inLivingroom = false
+  } else{
+    console.log(topic)
+    var splitTopic = topic.split("/")
+    console.log(splitTopic)
+    if (splitTopic[splitTopic.length -1] === "livingroom"){
+      inBedroom = false
+      inLivingroom = true
+      console.log("you are in living room")
+    } else if (splitTopic[splitTopic.length -1] === "bedroom"){
+      inBedroom = true
+      inLivingroom = false
+      console.log("you are in bed room")
+    }
   }
 })
 
