@@ -8,12 +8,7 @@ var inBedroom = false
 const topic = "bps/kjhaus/livingroom"
 const topic2 = "bps/kjhaus/bedroom"
 var mqtt = require("mqtt")
-var options = {
-  protocol: "mqtts",
-  clientId: "tswuwu",
-}
-//
-var client = mqtt.connect(process.env.MQTT_URL, options)
+var client = mqtt.connect(process.env.MQTT_URL)
 client.on("connect", function () {
   client.subscribe(topic, { qos: 1 }, function (err) {
     if (!err) {
