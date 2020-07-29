@@ -7,15 +7,15 @@ var topic2 = "bps/kjhaus/bedroom"
 var topics = [topic1, topic2]
 var mqtt = require("mqtt")
 var client = mqtt.connect(process.env.MQTT_URL)
-
+console.log(process.env.MQTT_URL)
 function DemoApp() {
   const [mesg, setMesg] = useState("Connecting...")
   const [room, setRoom] = useState(0)
 
   client.on("connect", () => {
     var subscribed = true
-    for (let x in topics) {
-      client.subscribe(x, { qos: 1 }, err => {
+    for (var topic of topics) {
+      client.subscribe(topic, { qos: 1 }, err => {
         if (!err) {
           console.log("Subscribed to topic!")
         } else {
