@@ -11,8 +11,8 @@ var inLivingroom = true
 var inBedroom = false
 
 var mqtt = require("mqtt")
-var client = mqtt.connect("ws://broker.mqttdashboard.com:1883") //TODO: having trouble with this connection
-// var client = mqtt.connect("mqtt://localhost:9001",{clientId:"mqttjs01"})
+// var client = mqtt.connect("ws://broker.mqttdashboard.com:1883") //TODO: having trouble with this connection
+var client = mqtt.connect("mqtt://39.109.166.181:9001",{clientId:"mqttjs01"})
 var topic = "bps/kjhaus/livingroom"
 var topic2 = "bps/kjhaus/bedroom"
 
