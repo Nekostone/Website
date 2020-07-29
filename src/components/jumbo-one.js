@@ -1,8 +1,10 @@
 import React from "react"
 import { Button, Container, Jumbotron } from "react-bootstrap"
+import ScrollableAnchor from "react-scrollable-anchor"
 
 const JumboOne = () => {
   return (
+    <ScrollableAnchor id={"home"}>
     <Jumbotron fluid className="jumbo-top">
       <Container className="content-center nice-image">
         <h1>Sentry</h1>
@@ -18,6 +20,7 @@ const JumboOne = () => {
         </div>
       </Container>
     </Jumbotron>
+    </ScrollableAnchor>
   )
 }
 

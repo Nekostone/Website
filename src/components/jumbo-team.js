@@ -1,5 +1,7 @@
 import React from "react"
 import { Col, Container, Figure, Jumbotron, Row } from "react-bootstrap"
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 import JundeMeow from "../images/team_members/JD.jpg"
 import KayJinMeow from "../images/team_members/KJ.jpg"
 import SiewWenMeow from "../images/team_members/sw.png"
@@ -21,6 +23,7 @@ const JumboTeam = () => {
   }
 
   return (
+    <ScrollableAnchor id={"team"}>
     <Jumbotron fluid className="jumbo-team">
       <Container className="content-center">
         <h2>Meet the Team</h2>
@@ -39,6 +42,7 @@ const JumboTeam = () => {
         </Row>
       </Container>
     </Jumbotron>
+    </ScrollableAnchor>
   )
 }
 

@@ -1,15 +1,20 @@
 import React from "react"
 import { Card, Col, Container, Jumbotron, Row } from "react-bootstrap"
+import ScrollableAnchor from "react-scrollable-anchor"
+
+import Fall_Icon from "../images/fall_detection.png"
+
 
 const JumboFive = () => {
   return (
-    <Jumbotron fluid className="jumbo-overview">
+    <ScrollableAnchor id={"features"}> 
+    <Jumbotron fluid className="jumbo-overview"> 
       <Container className="content-center">
-        <h2>System Overview</h2>
+          <h2>System Overview</h2>
         <Row>
           <Col>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Img variant="top" src={Fall_Icon} rounded />
               <Card.Body>
                 <div class="text-center">
                   <Card.Title>Fall Detection</Card.Title>
@@ -36,7 +41,6 @@ const JumboFive = () => {
               </Card.Body>
             </Card>
           </Col>
-
           <Col>
             <Card>
               <Card.Img variant="top" src="holder.js/100px180" />
@@ -55,6 +59,7 @@ const JumboFive = () => {
         </Row>
       </Container>
     </Jumbotron>
+    </ScrollableAnchor>
   )
 }
 
