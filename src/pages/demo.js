@@ -44,6 +44,13 @@ function DemoApp() {
         note === "1"
       ) {
         setRoom("in_bedroom")
+      } else if (
+        splitTopic[splitTopic.length - 1] === "toilet" &&
+        note === "1"
+      ) {
+        setRoom("in_toilet")
+      } else if (splitTopic[splitTopic.length - 1] === "exit" && note === "1") {
+        setRoom("in_exit")
       }
     }
   })
@@ -54,11 +61,13 @@ function DemoApp() {
         <Container className="content-center">
           <Row>
             <h2>Live Demo</h2>
-            <p>{mesg}</p>
           </Row>
           <Row>
             <div className="floorplan">
               <div className={room}></div>
+            </div>
+            <div>
+              <p>{mesg}</p>
             </div>
           </Row>
         </Container>

@@ -1,7 +1,7 @@
 .in_livingroom {
   background-color: aqua;
   width: 140px;
-  height: 240px;
+  height: 170px;
   margin-top: 200px;
   margin-left: 170px;
   z-index: 3;
@@ -16,6 +16,26 @@
   margin-left: 300px;
   z-index: 3;
   opacity: 0.5;
+}
+
+.in_toilet {
+  background-color: aqua;
+  width: 140px;
+  height: 70px;
+  margin-top: 360px;
+  margin-left: 170px;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.in_exit {
+  background-color: grey;
+  z-index: 3;
+  width: 250px;
+  height: 240px;
+  margin-top: 200px;
+  margin-left: 170px;
+  opacity: 0.3;
 }
 
 .floorplan {
